@@ -1,0 +1,43 @@
+print("Welcome to game center.")
+
+playing = input("Do want to play? : ")
+
+if(playing.lower() != "yes"):
+    quit()
+
+print("Well, then let's start the game.")
+score = 0
+
+answer = input("What is the easiest programming language to learn : ")
+
+if(answer == ""):
+    print("Enter a valid answer...")
+    quit()
+
+if(answer.lower() != "python"):
+    print("Wrong.")
+    score = score  - 1
+else:
+    print("Correct.")
+    score = score +1
+
+answer = input("what is ML stands for?: ")
+
+if(answer.lower() != "machine learning"):
+    print("Wrong.")
+    score = score  -1
+else:
+    print("Correct.")
+    score = score  +1
+
+
+answer = input("what is IOT stands for?: ")
+
+if(answer.lower() != "internet of things"):
+    print("Wrong.")
+    score = score  - 1
+else:
+    print("Correct.")
+    score = score +1
+
+print(f"your total score is : {score} ")
